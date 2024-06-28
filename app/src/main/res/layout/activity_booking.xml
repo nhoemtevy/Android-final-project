@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BookingActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/phone_number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginBottom="16dp" />
+    <EditText
+        android:id="@+id/editChekindate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Your Check In Date "
+
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginBottom="16dp" />
+    <EditText
+        android:id="@+id/editChekoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/write_your_check_out_date"
+        android:layout_below="@id/editChekindate"
+        android:layout_marginBottom="16dp" />
+    <ImageView
+        android:id="@+id/imageViewPayment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/editChekoutdate"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Payment Image"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/buttonConfirmBooking"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/buttonUploadPayment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_view"
+        android:text="Confirm Booking"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonUploadPayment"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageViewPayment"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Payment Image" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABA 004066238"
+        android:layout_below="@id/buttonConfirmBooking"/>
+</RelativeLayout>

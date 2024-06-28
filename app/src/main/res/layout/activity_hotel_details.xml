@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/imageViewHotel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textViewHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewHotel"
+            android:layout_marginTop="16dp"
+            android:text="Hotel Name"
+            android:textColor="#3F51B5"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewHotelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have Large space Double bed and soft "
+            android:layout_below="@id/textViewHotelName"
+            android:layout_marginTop="8dp" />
+
+
+        <Button
+            android:id="@+id/buttonBookNow"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewHotelDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_view"
+            android:text="Book Now"
+            android:textColor="#FFFFFF"
+            android:textCursorDrawable="@drawable/btn_view" />
+    </RelativeLayout>
+</ScrollView>
